@@ -205,15 +205,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (KEY_BATTERY_TEMP.equals(preference.getKey())) {
-            if (batteryTemp) {
-                mBatteryTemp.setSubtitle(
-                    com.android.internal.util.derp.derpUtils.batteryTemperature(getContext(), false));
-                batteryTemp = false;
-            } else {
-                mBatteryTemp.setSubtitle(
-                    com.android.internal.util.derp.derpUtils.batteryTemperature(getContext(), true));
-                batteryTemp = true;
-            }
+            updateBatteryTempPreference();
         }
         return super.onPreferenceTreeClick(preference);
     }
@@ -291,8 +283,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         updateBatteryTempPreference();
         mScreenUsagePref.setSubtitle(StringUtil.formatElapsedTime(getContext(),
                 mBatteryUtils.calculateScreenUsageTime(mStatsHelper), false));
-        mBatteryTemp.setSubtitle(
-                com.android.internal.util.derp.derpUtils.batteryTemperature(getContext(), batteryTemp));
     }
 
 
