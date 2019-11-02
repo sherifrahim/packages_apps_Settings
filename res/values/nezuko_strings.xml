@@ -144,4 +144,9 @@
     <string name="double_tap_title">Double tap</string>
     <string name="doze_double_tap_title">Double tap to check phone</string>
     <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
+
+    <!-- Pulse on new track -->
+    <string name="pulse_on_new_tracks_title">Ambient Music Ticker anzeigen</string>
+    <string name="pulse_on_new_tracks_summary">Ambient Display anzeigen, wenn ein neuer Songtitel abgespielt wird. Die Titelinformationen doppelt antippen, um zum nächsten Titel zu springen.</string>
+    <string name="pulse_on_new_tracks_soli_summary">Ambient Display anzeigen, wenn ein neuer Songtitel abgespielt wird.</string>
 </resources>
