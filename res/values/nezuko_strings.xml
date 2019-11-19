@@ -117,12 +117,6 @@
     </plurals>
     <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
 
-    <!-- Manage applications, package string displayed in app snippet -->
-    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
-
-    <!-- App details: open play store link if app is user installed -->
-    <string name="app_play_store">Google Play</string>
-
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Clear usage data?</string>
     <string name="battery_stats_message">Battery usage data will be lost</string>
@@ -132,9 +126,15 @@
     <string name="smart_charging_title">Smart Charging</string>
     <string name="smart_charging_summary">Set maximum charging level</string>
     <string name="smart_charging_switch_title">Use Smart charging</string>
+    <string name="smart_charging_reset_stats_title">Reset battery statistics</string>
+    <string name="smart_charging_reset_stats_summary">Reset battery statistics after reaching user defined charging level</string>
     <string name="smart_charging_level_title">Stop trigger level</string>
     <string name="smart_charging_resume_level_title">Start trigger level</string>
     <string name="smart_charging_footer">Smart Charging allows you to set maximum charging level to extend the lifespan of your battery</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">AOD beim Laden</string>
+    <string name="doze_on_charge_summary">Zeigen Sie beim Laden den AOD-Bildschirm an</string>
 
     <!-- Smart Charging indication -->
     <string name="smart_charge_indication_title">Smart charging indication</string>

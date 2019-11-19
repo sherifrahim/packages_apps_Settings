@@ -32,7 +32,7 @@ import com.android.settings.R;
 import com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 import com.android.settingslib.RestrictedPreference;
 
-import com.ssos.support.util.VibrationUtils;
+import com.nezuko.support.util.VibrationUtils;
 
 /**
  * A custom preference that provides inline switch toggle. It has a mandatory field for title, and
