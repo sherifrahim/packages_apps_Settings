@@ -139,4 +139,9 @@
     <!-- Smart Charging indication -->
     <string name="smart_charge_indication_title">Smart charging indication</string>
     <string name="smart_charge_indication_summary">Show whether the device is smart charging in settings and in the lockscreen</string>
+
+    <!-- Doze on double tap -->
+    <string name="double_tap_title">Double tap</string>
+    <string name="doze_double_tap_title">Double tap to check phone</string>
+    <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
 </resources>
