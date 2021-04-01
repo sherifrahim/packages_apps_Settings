@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/settings_header"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="17dp"
+    android:layout_marginStart="22dp"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+		<TextView
+			android:id="@android:id/title"
+			style="@style/settings_text_header"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="@integer/settings_title_gravity"
+			android:layout_gravity="@integer/settings_title_gravity"/>
+</FrameLayout>

@@ -19,9 +19,53 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
+  
+     <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-175"/>
+
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-170"/>
+  
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-165"/>
+
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-160"/>
+
+  
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-155"/>
+
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-150"/>
+
+
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-140"/>
+
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-130"/>
+
 
     <Preference
         android:key="top_level_network"
+        android:layout="@layout/nez_cardview_top"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_network"
@@ -31,6 +75,7 @@
 
     <Preference
         android:key="top_level_connected_devices"
+        android:layout="@layout/nez_top_card_bottom"
         android:title="@string/connected_devices_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_connected_device"
@@ -38,8 +83,14 @@
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-105"/>
+
     <Preference
         android:key="top_level_apps_and_notifs"
+        android:layout="@layout/nez_cardview_top"
         android:title="@string/app_and_notification_dashboard_title"
         android:summary="@string/app_and_notification_dashboard_summary"
         android:icon="@drawable/ic_homepage_apps"
@@ -48,6 +99,7 @@
 
     <Preference
         android:key="top_level_battery"
+        android:layout="@layout/nez_top_card_middle"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_battery"
@@ -57,6 +109,7 @@
 
     <Preference
         android:key="top_level_display"
+        android:layout="@layout/nez_top_card_middle"
         android:title="@string/display_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_display"
@@ -66,6 +119,7 @@
 
     <Preference
         android:key="top_level_sound"
+        android:layout="@layout/nez_top_card_middle"
         android:title="@string/sound_settings"
         android:summary="@string/sound_dashboard_summary"
         android:icon="@drawable/ic_homepage_sound"
@@ -74,6 +128,7 @@
 
     <Preference
         android:key="top_level_storage"
+        android:layout="@layout/nez_top_card_bottom"
         android:title="@string/storage_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_storage"
@@ -81,8 +136,14 @@
         android:fragment="com.android.settings.deviceinfo.StorageSettings"
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
 
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-57"/>
+
     <Preference
         android:key="top_level_privacy"
+        android:layout="@layout/nez_cardview_top"
         android:title="@string/privacy_dashboard_title"
         android:summary="@string/privacy_dashboard_summary"
         android:icon="@drawable/ic_homepage_privacy"
@@ -91,6 +152,7 @@
 
     <Preference
         android:key="top_level_location"
+        android:layout="@layout/nez_top_card_middle"
         android:title="@string/location_settings_title"
         android:summary="@string/location_settings_loading_app_permission_stats"
         android:icon="@drawable/ic_homepage_location"
@@ -100,6 +162,7 @@
 
     <Preference
         android:key="top_level_security"
+        android:layout="@layout/nez_top_card_bottom"
         android:title="@string/security_settings_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_security"
@@ -107,8 +170,14 @@
         android:fragment="com.android.settings.security.SecuritySettings"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="-35"/>
+
     <Preference
         android:key="top_level_accounts"
+        android:layout="@layout/nez_cardview_top"
         android:title="@string/account_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_accounts"
@@ -118,6 +187,7 @@
 
     <Preference
         android:key="top_level_accessibility"
+        android:layout="@layout/nez_top_card_middle"
         android:title="@string/accessibility_settings"
         android:summary="@string/accessibility_settings_summary"
         android:icon="@drawable/ic_homepage_accessibility"
@@ -127,14 +197,16 @@
 
     <Preference
         android:key="top_level_system"
+        android:layout="@layout/nez_top_card_middle"
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
         android:icon="@drawable/ic_homepage_system_dashboard"
-        android:order="10"
+        android:order="-19"
         android:fragment="com.android.settings.system.SystemDashboardFragment"/>
 
     <Preference
         android:key="top_level_about_device"
+        android:layout="@layout/nez_top_card_bottom"
         android:title="@string/about_settings"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_about"
@@ -142,12 +214,17 @@
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
 
+    <Preference 
+        android:layout="@layout/nez_cardview_divider" 
+        android:selectable="false"
+        android:order="21"/>
+
     <Preference
         android:key="top_level_support"
+        android:layout="@layout/nez_cardview_single"
         android:summary="@string/support_summary"
         android:title="@string/page_tab_title_support"
         android:icon="@drawable/ic_homepage_support"
         android:order="100"
         settings:controller="com.android.settings.support.SupportPreferenceController"/>
-
 </PreferenceScreen>
