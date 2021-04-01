@@ -73,7 +73,6 @@
         android:layout="@layout/nez_option_cw_single"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
-        settings:allowDividerAbove="true"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
 
