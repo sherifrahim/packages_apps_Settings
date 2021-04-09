@@ -30,6 +30,7 @@
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
         android:layout="@layout/nez_option_cw_single"
+        android:icon="@drawable/about_device_name"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
@@ -38,11 +39,12 @@
     <Preference 
         android:layout="@layout/nez_cardview_divider" 
         android:selectable="false"/>
-
+ 
     <!-- Model & hardware -->
     <Preference
         android:key="device_model"
         android:layout="@layout/nez_option_cw_single"
+        android:icon="@drawable/about_model_hardware"
         android:title="@string/model_info"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
@@ -58,6 +60,7 @@
     <Preference
         android:key="firmware_version"
         android:layout="@layout/nez_option_cw_single"
+        android:icon="@drawable/about_android_version"
         android:title="@string/firmware_version"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
@@ -69,22 +72,11 @@
 
     <!-- Build number -->
     <Preference
-        android:key="build_number" 
+        android:key="build_number"
+        android:icon="@drawable/about_build_number"
         android:layout="@layout/nez_option_cw_single"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
-
-    <Preference 
-        android:layout="@layout/nez_cardview_divider" 
-        android:selectable="false"/>
-
-    <!-- Device up time -->
-    <Preference
-        android:key="up_time"
-        android:layout="@layout/nez_option_cw_single"
-        android:title="@string/status_up_time"
-        android:summary="@string/summary_placeholder"/>
-
 </PreferenceScreen>

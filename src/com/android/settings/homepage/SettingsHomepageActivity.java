@@ -61,6 +61,8 @@ public class SettingsHomepageActivity extends FragmentActivity implements AppBar
         toolBarLayout.setCollapsedTitleTextColor(Utils.getColorAccentDefaultColor(this));
         toolBarLayout.setExpandedTitleColor(Utils.getColorAccentDefaultColor(this));
         toolBarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppBar);
+        toolBarLayout.setCollapsedTitleTextAppearance(R.style.UnExpanded);
+
 
         AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.app_bar);
         appBarLayout.addOnOffsetChangedListener(this);

@@ -284,6 +284,11 @@
 
     <style name="ExpandedAppBar">
         <item name="android:textSize">42sp</item>
+        <item name="android:textColor">@color/settext</item>
+    </style>
+
+    <style name="UnExpanded">
+        <item name="android:textColor">@color/settext</item>
     </style>
 
 </resources>

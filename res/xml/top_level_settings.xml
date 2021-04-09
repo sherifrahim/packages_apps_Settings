@@ -19,49 +19,42 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
-  
-     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
-        android:selectable="false"
-        android:order="-175"/>
 
     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
-        android:selectable="false"
-        android:order="-170"/>
-  
-    <Preference 
-        android:layout="@layout/nez_cardview_divider" 
-        android:selectable="false"
-        android:order="-165"/>
-
-    <Preference 
-        android:layout="@layout/nez_cardview_divider" 
+        android:layout="@layout/nez_cardview_divider_alt" 
         android:selectable="false"
         android:order="-160"/>
 
   
     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
+        android:layout="@layout/nez_cardview_divider_alt" 
         android:selectable="false"
         android:order="-155"/>
 
     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
+        android:layout="@layout/nez_cardview_divider_alt" 
         android:selectable="false"
         android:order="-150"/>
 
+    <Preference 
+        android:layout="@layout/nez_cardview_divider_alt" 
+        android:selectable="false"
+        android:order="-145"/>
 
     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
+        android:layout="@layout/nez_cardview_divider_alt" 
         android:selectable="false"
         android:order="-140"/>
 
     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
+        android:layout="@layout/nez_cardview_divider_alt" 
+        android:selectable="false"
+        android:order="-135"/>
+
+    <Preference 
+        android:layout="@layout/nez_cardview_divider_alt" 
         android:selectable="false"
         android:order="-130"/>
-
 
     <Preference
         android:key="top_level_network"

@@ -52,7 +52,7 @@
             app:contentScrim="?attr/colorPrimaryDark"
             app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
             app:layout_collapseMode="pin"
-            app:expandedTitleGravity="start|center_vertical"
+            app:expandedTitleGravity="bottom"
             app:toolbarId="@+id/toolbar">
 
             <androidx.appcompat.widget.Toolbar
@@ -64,13 +64,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
+                android:layout_gravity="top|end"
                 android:layout_marginEnd="8dp"
                 android:src="@drawable/ic_homepage_search"
                 app:layout_collapseMode="pin"
                 android:id="@+id/search_action_bar"
                 android:paddingRight="15dp"
-                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
                 android:contentDescription="TODO" />
 
 

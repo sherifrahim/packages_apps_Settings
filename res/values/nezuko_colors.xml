@@ -13,12 +13,5 @@
 
 <resources>
 
-    <color name="settingsHeaderColor">@*android:color/accent_device_default_dark</color>
-    <!-- Descendant background -->
-    <color name="dashboard_background_color">#363636</color>
-     <color name="nez_cardview">#242527</color>
-    <color name="nez_top_cardview">#242527</color>
-    <color name="op_preference_card_background_color">#ff1c1c1e</color>
-    <color name="op_preference_card_background_color_ripple">#33ffffff</color>
-     <color name="settext">#FFFFFF</color>
+    <color name="settext">#000000</color>
 </resources>
