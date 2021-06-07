@@ -48,6 +48,8 @@ public class SmartChargingSettings extends DashboardFragment implements OnPrefer
     private static final String KEY_SMART_CHARGING_RESUME_LEVEL = "smart_charging_resume_level";
     private CustomSeekBarPreference mSmartChargingLevel;
     private CustomSeekBarPreference mSmartChargingResumeLevel;
+    private SystemSettingSwitchPreference mResetStats;
+    private SystemSettingSwitchPreference mSmartChargeIndication;
 
     private int mSmartChargingLevelDefaultConfig;
     private int mSmartChargingResumeLevelDefaultConfig;
@@ -87,6 +89,57 @@ public class SmartChargingSettings extends DashboardFragment implements OnPrefer
                     R.string.smart_charging_footer).build());
         }
 
+        mResetStats = (SystemSettingSwitchPreference) findPreference("smart_charging_reset_stats");
+        mSmartChargeIndication = (SystemSettingSwitchPreference) findPreference("smart_charge_indication");
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        final View view = LayoutInflater.from(getContext()).inflate(R.layout.master_setting_switch, container, false);
+        ((ViewGroup) view).addView(super.onCreateView(inflater, container, savedInstanceState));
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        boolean enabled = Settings.System.getInt(getContentResolver(),
+                Settings.System.SMART_CHARGING, 0) == 1;
+
+        mTextView = view.findViewById(R.id.switch_text);
+        mTextView.setText(getString(enabled ?
+                R.string.switch_on_text : R.string.switch_off_text));
+
+        mSwitchBar = view.findViewById(R.id.switch_bar);
+        Switch switchWidget = mSwitchBar.findViewById(android.R.id.switch_widget);
+        switchWidget.setChecked(enabled);
+        switchWidget.setOnCheckedChangeListener(this);
+        mSwitchBar.setActivated(enabled);
+        mSwitchBar.setOnClickListener(v -> {
+            switchWidget.setChecked(!switchWidget.isChecked());
+            mSwitchBar.setActivated(switchWidget.isChecked());
+        });
+
+        mSmartChargingLevel.setEnabled(enabled);
+        mSmartChargingResumeLevel.setEnabled(enabled);
+        mResetStats.setEnabled(enabled);
+        mSmartChargeIndication.setEnabled(enabled);
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.SMART_CHARGING, isChecked ? 1 : 0);
+        mTextView.setText(getString(isChecked ? R.string.switch_on_text : R.string.switch_off_text));
+        mSwitchBar.setActivated(isChecked);
+
+        mSmartChargingLevel.setEnabled(isChecked);
+        mSmartChargingResumeLevel.setEnabled(isChecked);
+        mResetStats.setEnabled(isChecked);
+        mSmartChargeIndication.setEnabled(isChecked);
+    }
 
     @Override
     protected String getLogTag() {

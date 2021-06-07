@@ -21,12 +21,12 @@
     android:key="smart_charging_screen"
     android:title="@string/smart_charging_title">
 
-    <com.zenx.support.preferences.SystemSettingSwitchPreference
+    <com.nezuko.support.preferences.SystemSettingSwitchPreference
         android:key="smart_charging"
         android:title="@string/smart_charging_switch_title"
         android:defaultValue="false" />
 
-    <com.zenx.support.preferences.CustomSeekBarPreference
+    <com.nezuko.support.preferences.CustomSeekBarPreference
         android:key="smart_charging_level"
         android:title="@string/smart_charging_level_title"
         android:max="100"
@@ -35,7 +35,7 @@
         android:defaultValue="80"
         android:dependency="smart_charging" />
 
-    <com.zenx.support.preferences.CustomSeekBarPreference
+    <com.nezuko.support.preferences.CustomSeekBarPreference
         android:key="smart_charging_resume_level"
         android:title="@string/smart_charging_resume_level_title"
         android:max="99"
@@ -43,5 +43,22 @@
         settings:units="%"
         android:defaultValue="60"
         android:dependency="smart_charging" />
+
+    <com.nezuko.support.preferences.SystemSettingSwitchPreference
+        android:key="smart_charge_indication"
+        android:title="@string/smart_charge_indication_title"
+        android:summary="@string/smart_charge_indication_summary"
+        android:defaultValue="false" />
+
+    <com.nezuko.support.preferences.SystemSettingSwitchPreference
+        android:key="smart_charging_reset_stats"
+        android:title="@string/smart_charging_reset_stats_title"
+        android:summary="@string/smart_charging_reset_stats_summary"
+        android:defaultValue="false" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="smart_charging_footer"
+        android:selectable="false"
+        settings:searchable="false" />
 
 </PreferenceScreen>
