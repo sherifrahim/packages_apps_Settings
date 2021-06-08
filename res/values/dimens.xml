@@ -149,7 +149,7 @@
     <dimen name="wifi_assistant_image_start">24dp</dimen>
     <!-- appbar height is equal search bar height (48dp) plus search bar top and bottom margin  -->
     <dimen name="app_bar_height">80dp</dimen>
-    <dimen name="app2_bar_height">280dp</dimen>
+    <dimen name="app2_bar_height">175dp</dimen>
 
     <dimen name="preference_divider">8dp</dimen>
 

@@ -67,6 +67,10 @@ public class SettingsHomepageActivity extends FragmentActivity implements AppBar
         AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.app_bar);
         appBarLayout.addOnOffsetChangedListener(this);
 
+        final ImageView avatarView = findViewById(R.id.account_avatar);
+        getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
+        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
+
         final ImageView imageview = findViewById(R.id.search_action_bar);
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, imageview, SettingsEnums.SETTINGS_HOMEPAGE);
