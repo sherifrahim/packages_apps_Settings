@@ -84,10 +84,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  Gayzuko  "
-            android:background="?android:attr/textColorSecondary"
+            android:background="#000000"
             android:fontFamily="@*android:string/config_headlineFontFamily"
             android:layout_marginStart="22dp"
-            android:textColor="@color/settext"
+            android:textColor="?android:attr/textColorSecondary"
             android:gravity="center_vertical"
             android:lineHeight="15dp"
             android:singleLine="true" />
