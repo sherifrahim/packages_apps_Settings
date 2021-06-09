@@ -37,7 +37,7 @@
         settings:enableCopying="true"/>
 
     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
+        android:layout="@layout/nez_cardview_divider_about" 
         android:selectable="false"/>
  
     <!-- Model & hardware -->
@@ -53,7 +53,7 @@
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
 
     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
+        android:layout="@layout/nez_cardview_divider_about" 
         android:selectable="false"/>
 
     <!-- Android version -->
@@ -67,7 +67,7 @@
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
     <Preference 
-        android:layout="@layout/nez_cardview_divider" 
+        android:layout="@layout/nez_cardview_divider_about" 
         android:selectable="false"/>
 
     <!-- Build number -->

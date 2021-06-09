@@ -23,6 +23,16 @@
     <Preference 
         android:layout="@layout/nez_cardview_divider_alt" 
         android:selectable="false"
+        android:order="-160"/>
+
+    <Preference 
+        android:layout="@layout/nez_cardview_divider_alt" 
+        android:selectable="false"
+        android:order="-155"/>
+
+    <Preference 
+        android:layout="@layout/nez_cardview_divider_alt" 
+        android:selectable="false"
         android:order="-150"/>
 
     <Preference 
@@ -54,6 +64,15 @@
         android:order="-120"
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
+
+    <Preference
+        android:key="top_level_themer"
+        android:layout="@layout/nez_top_card_middle"
+        android:title="@string/nezuko_extras_title"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_homepage_network_alt"
+        android:order="-115"
+        android:fragment="com.nezuko.extras.NezukoExtras"/>
 
     <Preference
         android:key="top_level_connected_devices"
