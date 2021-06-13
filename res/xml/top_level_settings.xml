@@ -66,15 +66,6 @@
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
 
     <Preference
-        android:key="top_level_themer"
-        android:layout="@layout/nez_top_card_middle"
-        android:title="@string/nezuko_extras_title"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_homepage_network_alt"
-        android:order="-115"
-        android:fragment="com.nezuko.extras.NezukoExtras"/>
-
-    <Preference
         android:key="top_level_connected_devices"
         android:layout="@layout/nez_top_card_bottom"
         android:title="@string/connected_devices_dashboard_title"
